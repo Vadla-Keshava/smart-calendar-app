@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>📅 Smart Calendar</h1>
+            <p>Manage your days and events easily</p>
+        </header>
+
+        <div class="calendar">
+
+            <div class="calendar-header">
+                <button id="prev">❮</button>
+                <h2 id="monthYear"></h2>
+                <button id="next">❯</button>
+            </div>
+
+            <button id="todayBtn" class="today-btn">
+                Go to Today
+            </button>
+
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+
+            <div class="days" id="days"></div>
+
+        </div>
+
+        <div class="event-section">
+            <h2>Add New Event</h2>
+
+            <form id="eventForm">
+                <input
+                    type="text"
+                    id="eventTitle"
+                    placeholder="Enter event name"
+                    required
+                >
+
+                <input
+                    type="date"
+                    id="eventDate"
+                    required
+                >
+
+                <button type="submit">Add Event</button>
+            </form>
+
+            <h2>My Events</h2>
+            <div id="eventList"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
